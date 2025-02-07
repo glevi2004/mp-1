@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator | Gabriel Levi Ramos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Placed inside div in order for h1 and p tags to be centralized -->
+      <header>
+        <div>
+          <h1>Gabriel Levi Ramos</h1>
+          <p>My Online Resume</p>
+        </div>
+      </header>
+      <div id="page-container">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="work-experiences.html">Employment</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+        <main>
+          <div id="calculator-container">
+            <h1>JavaScript Calculator</h1>
+            <input
+              type="number"
+              placeholder="Input 1"
+              class="input"
+              id="input-1"
+            />
+            <input
+              type="number"
+              placeholder="Input 2"
+              class="input"
+              id="input-2"
+            />
+            <div id="calc-buttons-container">
+              <button class="calc-button" id="plus-button" onclick="addition()">
+                +
+              </button>
+              <button
+                class="calc-button"
+                id="minus-button"
+                onclick="subtraction()"
+              >
+                -
+              </button>
+              <button
+                class="calc-button"
+                id="division-button"
+                onclick="division()"
+              >
+                /
+              </button>
+              <button class="calc-button" id="power-button" onclick="power()">
+                **
+              </button>
+            </div>
+            <div id="calc-output"></div>
+
+            <button id="clear-button" onclick="clearCalculator()">Clear</button>
+          </div>
+        </main>
+      </div>
+      <footer>
+        <p>
+          All Rights Reserved by Gabriel Levi Ramos
+          <a href="..." target="_blank">Credits</a> &copy;
+        </p>
+      </footer>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
